@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  project-name-frontend-staging:
+    image: gitlab.tazonte.rw:5050/tazonte/project-name/frontend/staging
+    ports:
+      - 8030:3000
+    restart: always

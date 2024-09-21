@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	font-family: "Lexend", Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: white;
+	color: black;
+	font-family: "Lexend", Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+}
+
+.navbar-shadow {
+	background: #ffffff;
+	box-shadow: 0px 4px 12px rgba(14, 99, 140, 0.1);
+}
+.animated-message {
+	animation-name: animateMessage;
+	animation-duration: 1s;
+}
+
+@keyframes animateMessage {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* nprogress.css */
+#nprogress {
+	pointer-events: none;
+}
+
+#nprogress .bar {
+	background: #e3b221;
+	position: fixed;
+	z-index: 1031;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+}
+
+#nprogress .peg {
+	display: block;
+	position: absolute;
+	right: 0px;
+	width: 100px;
+	height: 100%;
+	box-shadow:
+		0 0 10px #313622,
+		0 0 5px #313622;
+	opacity: 1;
+	-webkit-transform: rotate(3deg) translate(0px, -4px);
+	-ms-transform: rotate(3deg) translate(0px, -4px);
+	transform: rotate(3deg) translate(0px, -4px);
+}
+
+.ant-switch-checked .ant-switch-handle::before {
+	@apply !bg-project-name-yellow !opacity-100;
+}

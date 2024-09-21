@@ -1,0 +1,7 @@
+{
+    "title": "This is English",
+    "apiGenericErr": {
+        "message": "Unkown error",
+        "description": "We couldn't process your request, please try again later!"
+    }
+}
